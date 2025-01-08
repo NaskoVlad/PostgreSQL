@@ -1,0 +1,16 @@
+create schema netology;
+
+create table netology.PERSONS (
+    name text,
+    surname text,
+    age integer,
+    phone_number bigserial,
+    city_of_living text,
+    PRIMARY KEY(name, surname, age)
+);
+
+insert into netology.PERSONS (name, surname, age, phone_number, city_of_living)
+values ('Ivan', 'Ivanov', '32', '+79995464545', 'Omsk'),
+       ('Andrey', 'Ivanov', '33', '+79995464444', 'Moskow'),
+       ('Pety', 'Petrov', '24', '+79995464414', 'Moskow'),
+       ('Pety', 'Ivanov', '21', '+79995464144', 'Ivanovo');
